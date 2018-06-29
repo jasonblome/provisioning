@@ -24,8 +24,7 @@ choco install anaconda3 -y --version 5.1.0 --execution-timeout 10000 --params="'
 
 # install the Bloomberg APIs for python
 iex "$Env:UserProfile\Anaconda\Scripts\conda.exe install -y -c mbonix blpapi"
-iex "$Env:UserProfile\Anaconda\Scripts\pip.exe install --find-links https://s3.amazonaws.com/stoneridge-wheelhou
-se/index.html ds-bpipe"
+iex "$Env:UserProfile\Anaconda\Scripts\pip.exe install --find-links https://s3.amazonaws.com/stoneridge-wheelhouse/index.html ds-bpipe"
 
 # install the JetBrains toolbox
 choco install jetbrainstoolbox -y
