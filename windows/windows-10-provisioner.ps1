@@ -1,5 +1,5 @@
 # install chocolatey
-iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # install Slack
 choco install slack -y
@@ -30,6 +30,7 @@ iex "$Env:UserProfile\Anaconda\Scripts\pip.exe install --find-links https://s3.a
 choco install jetbrainstoolbox -y
 
 # install VSCode
+choco install vcbuildtools
 choco install vscode -y
 
 # install SQL Server Management Studio
